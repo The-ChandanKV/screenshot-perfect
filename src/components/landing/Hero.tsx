@@ -136,7 +136,7 @@ export function Hero() {
               viewBox="0 0 100 100"
               className="absolute -inset-3 h-auto w-auto"
               aria-hidden="true"
-              animate={reduceMotion ? undefined : { rotate: 360 }}
+              animate={reduceMotion ? {} : { rotate: 360 }}
               transition={{ duration: 90, repeat: Infinity, ease: "linear" }}
             >
               <circle
@@ -221,7 +221,7 @@ export function Hero() {
               className="absolute -bottom-6 left-1/2 w-[78%] -translate-x-1/2 sm:-bottom-10 sm:left-auto sm:right-[-4%] sm:w-[64%] sm:translate-x-0"
             >
               <motion.div
-                animate={reduceMotion ? undefined : { y: [0, -7, 0] }}
+                animate={reduceMotion ? {} : { y: [0, -7, 0] }}
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                 className="glow-ring rounded-2xl border border-border/70 bg-background/90 p-4 backdrop-blur-xl sm:p-5"
               >
